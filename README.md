@@ -5,4 +5,3 @@ Example usage:
 `python main.py --n 300 --mu 100 --pc 0.2 --pm 0.02`
 
 ![Drawing a TSP](example1.jpg)
-![Solution](example2.jpg)
