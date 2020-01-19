@@ -16,10 +16,13 @@ if __name__ == "__main__":
     plane = Plane()
     plane.draw_pixels()
     ga = GA(plane.cities, plane.city_count, plane.draw_route, args.mu, args.pc, args.pm)
-    while ga.equal_count < args.n:
+    while True:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
-        ga.optimize()
-    ga.incumbent()
+        if ga.equal_count < args.n:
+            ga.optimize()
+        elif ga.equal_count == args.n:
+            ga.incumbent()
+            ga.equal_count += 1

@@ -3,3 +3,6 @@ Tool to create your own Travelling Salesman Problem (TSP) and solve it using a G
 
 Example usage:
 `python main.py --n 300 --mu 100 --pc 0.2 --pm 0.02`
+
+![alt text](example1.jpg)
+![alt text](example2.jpg)
